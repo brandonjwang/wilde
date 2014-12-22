@@ -2,7 +2,7 @@ var Wilde = new function() {
   this.canvasId = "main";
   this.canvas = document.getElementById(this.canvasId);
   this.ctx = this.canvas.getContext('2d');
-  this.colors = ["#797883", "#444E5A", "#999999", "#668899"];
+  this.colors = ["#ffb303", "#ffffff", "#008aff"];
   this.getRandomColor = function() {
     return this.colors[Math.floor(Math.random() * this.colors.length)];
   }
