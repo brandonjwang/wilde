@@ -22,8 +22,8 @@ var Wilde = new function() {
 
   this.actions = [this.drawCircle];
   this.draw = function() {
-    this.canvas.width = document.width;
-    this.canvas.height = document.height;
+    this.canvas.width = document.body.clientWidth;
+    this.canvas.height = document.body.clientHeight;
 
     var numActions = (this.canvas.width * this.canvas.height) / 100;
     for (var i = 0; i < numActions; ++i) {
